@@ -21,8 +21,8 @@ function init() {
     food.classList.add('panda')
     food.textContent = foods[Math.floor(Math.random() * foods.length)]
  food.style.top = `${pos.y + pos.height / 2 - 22}px`
-    food.style.left = `${pos.x + pos.width / 2 - 22}px`
-    cover.appendChild(food)
+    food.style.left = `${pos.x + pos.width / 2 - 22 - 60}px`
+      cover.appendChild(food)
 
     setTimeout(() => {
       food.style.left = `${pos.x > 300 ? pos.x - 300 : 50}px`
