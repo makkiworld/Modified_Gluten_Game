@@ -25,7 +25,7 @@ function init() {
       cover.appendChild(food)
 
     setTimeout(() => {
-      food.style.left = `${pos.x > 300 ? pos.x - 300 : 50}px`
+      food.style.left = `${pos.x > 500 ? pos.x - 500 : 50}px`
     }, 40)
 
     setTimeout(() => {
