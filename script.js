@@ -20,8 +20,8 @@ function init() {
     const food = document.createElement('div')
     food.classList.add('panda')
     food.textContent = foods[Math.floor(Math.random() * foods.length)]
-    food.style.top = `${pos.y - 10}px`
-    food.style.left = `${pos.x - 10}px`
+ food.style.top = `${pos.y + pos.height / 2 - 22}px`
+    food.style.left = `${pos.x + pos.width / 2 - 22}px`
     cover.appendChild(food)
 
     setTimeout(() => {
@@ -37,6 +37,7 @@ function init() {
   const trigger = () => {
     if (!canClick) return
     canClick = false
+    pos = pandaFace.getBoundingClientRect()
     button.classList.add('animate')
 
     setTimeout(() => {
