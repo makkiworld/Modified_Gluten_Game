@@ -30,26 +30,7 @@ body {
   flex-direction: column;
 }
 
-.panda_face.hide { opacity: 0; }
-
-span { margin-left:12px; }
-
-.sign {
-  position: absolute;
-  color: white;
-  bottom: 10px;
-  right: 10px;
-  font-size: 10px;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
+span { margin-left: 12px; }
 
 .panda {
   position: absolute;
@@ -57,15 +38,9 @@ a:hover {
   width: 45px;
   overflow: hidden;
   transition: 2s;
-}
-
-.panda_inner {
-  height: 100%;
-}
-
-.panda_inner svg {
-  height: 100%;
-  width: auto;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
 }
 
 button {
@@ -75,7 +50,7 @@ button {
   justify-content: center;
   align-items: center;
   border: solid rgb(131, 88, 59);
-  border-width:2px 2px 7px 2px;
+  border-width: 2px 2px 7px 2px;
   border-radius: 10px;
   background-color: rgb(83, 39, 9);
   font-family: 'Press Start 2P', cursive;
@@ -86,7 +61,7 @@ button {
 }
 
 button:hover {
-  border-width:2px 2px 4px 2px;
+  border-width: 2px 2px 4px 2px;
   margin-top: 3px;
 }
 
@@ -101,21 +76,10 @@ button:focus {
   width: auto;
 }
 
-.panda_face {
-  opacity: 1;
+.emoji {
+  font-size: 22px;
+  line-height: 25px;
 }
-
-.panda_face svg {
-  height: 100%;
-  width: auto;
-}
-
-.panda_white { fill: white; }
-.blue { fill: #12b7e9; }
-.green { fill: rgb(43, 163, 113); }
-.pink { fill: hotpink;}
-.brown { fill: rgb(126, 80, 62);}
-.dark_brown { fill: rgb(53, 34, 27);}
 
 button:hover .panda_face {
   animation: bop infinite 0.5s;
@@ -128,10 +92,10 @@ button:hover .panda_face {
   }
   50% {
     top: -5px;
-    transform: scale(0.95,1.05);
+    transform: scale(0.95, 1.05);
   }
   90% {
-    transform: scale(1.1,0.9);
+    transform: scale(1.1, 0.9);
   }
   100% {
     top: 0;
@@ -139,7 +103,7 @@ button:hover .panda_face {
   }
 }
 
-button.animate svg {
+button.animate .emoji {
   animation: spin infinite linear 0.5s;
 }
 
@@ -152,29 +116,6 @@ button.animate svg {
   }
 }
 
-@keyframes fadeout {
-  0% { 
-    opacity: 1;
-  }
-  90% { 
-    opacity: 0;
-  }
-  100% { 
-    opacity: 0;
-    display: none;
-  }
-} 
-
-button:hover .fade_in,
-.panda_face.fade_in {
-  animation: fade_in forwards 0.5s;
-}
-
-@keyframes fade_in {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
 button.animate {
   border-color: rgb(58, 28, 9);
   transform-origin: bottom right;
@@ -182,26 +123,26 @@ button.animate {
 }
 
 @keyframes shake {
-  0% { 
+  0% {
     transform-origin: bottom right;
-    transform: translate(0,0) rotate(0deg);
+    transform: translate(0, 0) rotate(0deg);
   }
-  40% { 
-    transform: translate(5px,0) rotate(45deg);
+  40% {
+    transform: translate(5px, 0) rotate(45deg);
   }
   70% {
-    transform-origin: bottom right; 
-    transform: translate(5px,0) rotate(45deg);
-  }
-  85% { 
-    transform-origin: bottom left; 
-    transform: translate(0,0) rotate(-20deg);
-  }
-  95% { 
-    transform: translate(0,0) rotate(0deg);
-  }
-  100% { 
     transform-origin: bottom right;
-    transform: translate(0,0) rotate(0deg);
+    transform: translate(5px, 0) rotate(45deg);
+  }
+  85% {
+    transform-origin: bottom left;
+    transform: translate(0, 0) rotate(-20deg);
+  }
+  95% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  100% {
+    transform-origin: bottom right;
+    transform: translate(0, 0) rotate(0deg);
   }
 }
