@@ -149,3 +149,26 @@ button.animate {
     transform: translate(0, 0) rotate(0deg);
   }
 }
+button {
+  width: 220px;
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+button:hover {
+  margin-top: 0;
+}
+
+button:focus {
+  box-shadow: none;
+}
+
+.panda_face {
+  height: auto;
+}
+
+.knife {
+  width: 100%;
+  display: block;
+}
