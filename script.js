@@ -20,7 +20,7 @@ function init() {
     const food = document.createElement('div')
     food.classList.add('panda')
     food.textContent = foods[Math.floor(Math.random() * foods.length)]
- food.style.top = `${pos.y + pos.height / 2 - 22}px`
+ food.style.top = `${pos.y + pos.height / 2 - 22 + 40}px`
     food.style.left = `${pos.x + pos.width / 2 - 22 - 60}px`
       cover.appendChild(food)
 
