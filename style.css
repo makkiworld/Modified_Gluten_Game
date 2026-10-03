@@ -170,6 +170,12 @@ button:focus {
   height: auto;
 }
 
+
+
+.knife {
+  width: 100%;
+  display: block;
+}
 .bread {
   position: absolute;
   width: 260px;
@@ -183,8 +189,3 @@ button:focus {
 .bread_back { z-index: 1; }
 button { z-index: 2; }
 .bread_front { z-index: 3; }
-
-.knife {
-  width: 100%;
-  display: block;
-}
