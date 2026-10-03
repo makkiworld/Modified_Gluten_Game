@@ -170,6 +170,20 @@ button:focus {
   height: auto;
 }
 
+.bread {
+  position: absolute;
+  width: 260px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -20%);
+  pointer-events: none;
+  image-rendering: pixelated;
+}
+
+.bread_back { z-index: 1; }
+button { z-index: 2; }
+.bread_front { z-index: 3; }
+
 .knife {
   width: 100%;
   display: block;
