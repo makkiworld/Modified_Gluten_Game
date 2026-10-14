@@ -190,3 +190,28 @@ button:focus {
 .bread_back { z-index: 1; }
 button { z-index: 2; }
 .bread_front { z-index: 3; }
+
+.instructions {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 90%;
+  max-width: 320px;
+  text-align: right;
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  text-shadow: 2px 2px 0 #000;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.instructions h1 {
+  font-size: 20px;
+  margin: 0 0 12px;
+}
+
+.instructions p {
+  font-size: 11px;
+  line-height: 1.8;
+  margin: 0;
+}
