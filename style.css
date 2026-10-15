@@ -215,3 +215,33 @@ button { z-index: 2; }
   line-height: 1.8;
   margin: 0;
 }
+
+.spray {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  width: 220px;
+  text-align: center;
+  cursor: pointer;
+  z-index: 5;
+  transition: 0.2s;
+}
+
+.spray:hover {
+  transform: scale(1.05);
+}
+
+.spray img {
+  width: 100%;
+  display: block;
+  image-rendering: pixelated;
+}
+
+.spray p {
+  margin: 8px 10px 0;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 9px;
+  line-height: 1.8;
+  color: white;
+  text-shadow: 2px 2px 0 #000;
+}
